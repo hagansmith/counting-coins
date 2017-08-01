@@ -56,5 +56,5 @@ var penny = 1;
  
  }
 
- var coins = coinCounter(.67);
+ var coins = coinCounter(amount);
  console.log(coins);
