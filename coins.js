@@ -28,6 +28,11 @@ var penny = 1;
       pennies:'',
     }; 
 
+  coinPurse.quarters = 0;
+  coinPurse.dimes = 0;
+  coinPurse.nickels = 0;
+  coinPurse.pennies = 0;
+
   do { 
       if (whatsLeft >= quarter) {
         coinPurse.quarters = Math.floor(whatsLeft / quarter);
