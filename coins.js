@@ -22,17 +22,13 @@ var penny = 1;
   amount = amount * 100;
   var whatsLeft = amount;
   var coinPurse = {
-      quarters:'',
-      dimes:'',
-      nickels:'',
-      pennies:'',
+      quarters: 0,
+      dimes: 0,
+      nickels: 0,
+      pennies: 0,
     }; 
 
-  coinPurse.quarters = 0;
-  coinPurse.dimes = 0;
-  coinPurse.nickels = 0;
-  coinPurse.pennies = 0;
-
+ 
   do { 
       if (whatsLeft >= quarter) {
         coinPurse.quarters = Math.floor(whatsLeft / quarter);
