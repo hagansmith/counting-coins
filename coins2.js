@@ -26,7 +26,7 @@ function coinCounter (total) {
     nickels: '',
     pennies: ''
   };
-  
+
   coinPurse.quarters = 0;
   coinPurse.dimes = 0;
   coinPurse.nickels = 0;
@@ -35,18 +35,18 @@ function coinCounter (total) {
   if (amountRemaining >= quarter) {
     coinPurse.quarters = Math.floor(amountRemaining/quarter);
     amountRemaining = total % quarter;}
-  
+
   if (amountRemaining < quarter && amountRemaining >= dime) {
     coinPurse.dimes = Math.floor(amountRemaining/dime);
     amountRemaining = total % dime;}
-  
+
   if (amountRemaining < dime && amountRemaining >= nickel) {
     coinPurse.nickels = Math.floor(amountRemaining/nickel);
     amountRemaining = total % nickel;}
 
   if (amountRemaining < nickel && amountRemaining >= penny) {
     coinPurse.pennies = Math.floor(amountRemaining/penny);}
- 
+
   return coinPurse;
 }
 

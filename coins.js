@@ -26,26 +26,26 @@ var penny = 1;
       dimes: 0,
       nickels: 0,
       pennies: 0,
-    }; 
+    };
 
- 
-  do { 
+
+  do {
       if (whatsLeft >= quarter) {
         coinPurse.quarters = Math.floor(whatsLeft / quarter);
         whatsLeft = whatsLeft % quarter;
-            
+
       } else if (whatsLeft >= dime){
         coinPurse.dimes = Math.floor(whatsLeft / dime);
         whatsLeft = whatsLeft % dime;
-          
+
       } else if (whatsLeft >= nickel){
         coinPurse.nickels = Math.floor(whatsLeft / nickel);
         whatsLeft = whatsLeft % nickel;
-         
+
       } else if (whatsLeft >= penny){
         coinPurse.pennies = Math.floor(whatsLeft / penny);
         whatsLeft = whatsLeft % penny;
-          
+
       } else {
         whatsLeft = 0
         console.log("shit's broken");
@@ -54,7 +54,7 @@ var penny = 1;
   while (whatsLeft > 0);
 
   return coinPurse;
- 
+
  }
 
  var coins = coinCounter(amount);
